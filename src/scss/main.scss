@@ -1,3 +1,8 @@
-@import "bootstrap/bootstrap.scss";
-@import "settings.scss";
-@import "style.scss";
+// Vendor
+@import "bootstrap/scss/bootstrap";
+
+// Settings, Mixins, etc
+@import "settings";
+
+// Components
+@import "components/common"

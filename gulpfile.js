@@ -48,7 +48,9 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
   return gulp.src(config.scssin)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      includePaths: ['node_modules']
+    }).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 3 versions']
     }))

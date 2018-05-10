@@ -8,7 +8,9 @@
   },
   "author": "Czarny",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
